@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.notificationbar {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background-color: #150050;
+    color: white;
+    /* padding: 15px; */
+    text-align: center;
+    font-size: 16px;
+    z-index: 9999;
+    transition: top 0.5s ease;
+}
+
+.notificationbar.visible {
+    top: 0;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.hero {
+    background: url(../image/hero-background.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.title-contents {
+    display: flex;
+    gap: 36px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.content {
+    color: #fff;
+    display: flex;
+    gap: 6px;
+    font-family: "inter";
+}
+
+.content-text h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-text span {
+    font-weight: 500;
+}
+
+.navbar {
+    padding: 15px 20px;
+}
+
+li.nav-item {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+/* ul.navbar-nav {
+    margin: 0 15px;
+} */
+
+.navbar-brand {
+    font-size: 40px;
+    margin-right: 32px;
+    color: #fff;
+    font-weight: 500;
+}
+.nav-link {
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.articlesection {
+    color: #fff;
+}
+
+.articlesection small {
+    color: #8538AE;
+    font-size: 1.125em;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.article-row {
+    align-items: anchor-center;
+}
+
+.Highlight {
+    color: #8538AE;
+}
+
+.col h1 {
+    font-size: 3.75em;
+    font-family: sans-serif;
+    line-height: 134.5%;
+    font-weight: 600;
+}
+
+.col p {
+    font-size: 1.25em;
+    line-height: 134.5%;
+    color: #d8d8d8;
+    letter-spacing: 1px;
+    flex: 1 1 auto;
+}
+
+#article-buttons {
+    display: flex;
+    gap: 1rem;
+    background: unset;
+    border: unset;
+}
+
+input[type="button"] {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 7px 25px !important;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(to bottom, #8538AE 0%, #270095 87%);
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.btnlearn {
+    background: none !important;
+    border: 1.5px solid #fff !important;
+}
+
+.Image-section img {
+    position: relative;
+    right: 215px;
+}
+
+.articlesection {
+    flex-wrap: nowrap;
+}
+
+.article {
+    width: 50%;
+}
+
+.Image-section {
+    width: 50%;
+}
+
+.infos {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+.infos img {
+    width: 47px;
+}
+.info-texts h2 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+.info-texts p {
+    font-size: 1.063rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #959595;
+    line-height: 1.6;
+}
+.info {
+    margin: 0 10px;
+    gap: 1.2rem;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+/* Optional: Add a subtle animation when it loads */
+.overlap-image img {
+  transition: transform 0.3s ease;
+}
+
+.overlap-image img:hover {
+  transform: translateY(-10px);
+}
+
+.container-info {
+    background-color: #F5F5F5;
+    margin-bottom: 60px;
+}
+
+.text-start {
+    padding: 30px 0;
+}
+
+.about-us-texts h2 {
+    font-size: 2.5rem;
+}
+
+.about-us-texts {
+    margin-left: 0;
+}
+
+.about-us .row {
+    justify-content: space-around;
+}
