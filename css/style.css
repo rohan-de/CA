@@ -210,8 +210,12 @@ input[type="button"] {
     padding: 30px 0;
 }
 
+.about-us-texts h6 {
+    color: #77339B !important;
+}
 .about-us-texts h2 {
     font-size: 2.5rem;
+    color: #333;
 }
 
 .about-us-texts {
@@ -220,4 +224,40 @@ input[type="button"] {
 
 .about-us .row {
     justify-content: space-around;
+}
+
+.about-us-texts p {
+    color: #797475 !important;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+span.highlite-text {
+    color: #CA95E5;
+}
+
+.dot-purple {
+    background-color: #8334ad;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    /* Prevents dot from squeezing on small screens */
+}
+
+.links-text {
+    padding-left: 0;
+}
+
+.tax-text {
+    /* Responsive font size: larger on desktop, smaller on mobile */
+    font-size: 1.25rem !important;
+}
+
+.btn {
+    border-radius: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    background: linear-gradient(to bottom, #8538AE 0%, #270095 87%);
+    border: none;
 }
