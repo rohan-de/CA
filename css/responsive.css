@@ -143,7 +143,7 @@
   }
 
   #article-buttons {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: -webkit-fill-available;
   }
 
