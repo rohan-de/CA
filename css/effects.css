@@ -1,4 +1,4 @@
-/* @keyframes fadeInLeft {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
     transform: translateX(-30px);
@@ -8,28 +8,110 @@
     opacity: 1;
     transform: translateX(0);
   }
-} */
+}
 
-.articlesection, .Image-section{
+.articlesection,
+.Image-section {
   opacity: 0;
   transform: translateY(50px);
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
+
+/* .slide-left {
+  transform: translate(100%);
+} */
 
 .show {
   opacity: 1;
   transform: translate(0);
 }
 
-.navbar-brand:focus {
-  color: #fff;
+.floating {
+  animation: float 4s ease-in-out infinite;
 }
-.navbar-brand:hover {
-  color: #fff;
+
+@keyframes float {
+  50% {
+    transform: translateY(-15px);
+  }
 }
-.nav-link:hover {
-  color: #8538AE;
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.nav-link:focus {
-  color: #8538AE;
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+button.btn-learn-more:hover {
+  background: linear-gradient(178deg, #7a2fa0, rgba(30, 0, 130, 0.95));
+}
+.btn-learn-more:active {
+  transform: scale(0.97);
+}
+
+/* ── Entry animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(36px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.85); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes cardRise {
+      from { opacity: 0; transform: translateY(50px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+ 
+    /* All animatable elements start invisible and paused */
+    .card,
+    .carousel-dots,
+    .progress-bar {
+      opacity: 0;
+      animation-play-state: paused;
+    }
+ 
+    /* When section is visible, play animations */
+    .section.in-view .section-label {
+      animation: slideInLeft 0.6s cubic-bezier(0.22,1,0.36,1) 0.05s both;
+      animation-play-state: running;
+    }
+    .section.in-view .section-title {
+      animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.18s both;
+      animation-play-state: running;
+    }
+    .section.in-view .discover-btn {
+      animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.30s both;
+      animation-play-state: running;
+    }
+    .section.in-view .card {
+      animation: cardRise 0.65s cubic-bezier(0.22,1,0.36,1) both;
+      animation-play-state: running;
+    }
+    .section.in-view .card:nth-child(1) { animation-delay: 0.35s; }
+    .section.in-view .card:nth-child(2) { animation-delay: 0.50s; }
+    .section.in-view .card:nth-child(3) { animation-delay: 0.65s; }
+    .section.in-view .card:nth-child(4) { animation-delay: 0.80s; }
+    .section.in-view .card:nth-child(5) { animation-delay: 0.95s; }
+    .section.in-view .card:nth-child(6) { animation-delay: 1.10s; }
+    .section.in-view .carousel-dots {
+      animation: fadeIn 0.5s ease 0.90s both;
+      animation-play-state: running;
+    }
+    .section.in-view .progress-bar {
+      animation: fadeIn 0.5s ease 1.0s both;
+      animation-play-state: running;
+    }
